@@ -1,4 +1,4 @@
-TiPlayingInfo
+TiNowPlaying
 ===
 This module allows you to set song attributes and handle remote controls events (Lockscreen or Control Center) on your iOS app using Titanium.
 
@@ -9,10 +9,10 @@ Download the compiled release [here](https://github.com/bguidolim/TiPlayingInfo/
 How to Use
 ===
 ```javascript
-var PlayingInfo = require('com.guidolim.TiNowPlaying');
+var nowPlaying = require('com.guidolim.TiNowPlaying');
 
 //Set "Now Playing" info
-PlayingInfo.setInfo({
+nowPlaying.setInfo({
   artistName: 'Artist Name',
   songTitle: 'Song Name',
   albumTitle: 'Album Title',
@@ -20,42 +20,46 @@ PlayingInfo.setInfo({
 });
 
 //Clear "Now Playing" info
-PlayingInfo.clear();
+nowPlaying.clear();
 
 //Handle remote control events
-PlayingInfo.addEventListener('RemoteControl', function(e) {
+nowPlaying.addEventListener('RemoteControl', function(e) {
   Ti.API.debug('remote control event was fired!');
   switch (e.action) {
-    case PlayingInfo.PLAY:
+    case nowPlaying.PLAY:
       Ti.API.info("Remote Control: PLAY");
       break;
-    case PlayingInfo.PAUSE:
+    case nowPlaying.PAUSE:
       Ti.API.info("Remote Control: PAUSE");
       break;
-    case PlayingInfo.STOP:
+    case nowPlaying.STOP:
       Ti.API.info("Remote Control: STOP");
       break;
-    case PlayingInfo.PLAY_PAUSE:
+    case nowPlaying.PLAY_PAUSE:
       Ti.API.info("Remote Control: PLAY_PAUSE");
       break;
-    case PlayingInfo.PREV:
+    case nowPlaying.PREV:
       Ti.API.info("Remote Control: PREV");
       break;
-    case PlayingInfo.:
+    case nowPlaying.NEXT:
       Ti.API.info("Remote Control: NEXT");
       break;
-    case PlayingInfo.START_SEEK_BACK:
+    case nowPlaying.START_SEEK_BACK:
       Ti.API.info("Remote Control: START_SEEK_BACK");
       break;
-    case PlayingInfo.END_SEEK_BACK:
+    case nowPlaying.END_SEEK_BACK:
       Ti.API.info("Remote Control: END_SEEK_BACK");
       break;
-    case PlayingInfo.START_SEEK_FORWARD:
+    case nowPlaying.START_SEEK_FORWARD:
       Ti.API.info("Remote Control: START_SEEK_FORWARD");
       break;
-    case PlayingInfo.END_SEEK_FORWARD:
+    case nowPlaying.END_SEEK_FORWARD:
       Ti.API.info("Remote Control: END_SEEK_FORWARD");
       break;
   }
 });
 ```
+
+Contributions
+===
+Feel free to fork the repo, optimize and make a pull request. :-)
