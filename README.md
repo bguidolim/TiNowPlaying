@@ -9,7 +9,7 @@ Download the compiled release [here](https://github.com/bguidolim/TiPlayingInfo/
 How to Use
 ===
 ```javascript
-var PlayingInfo = require('com.guidolim.TiPlayingInfo');
+var PlayingInfo = require('com.guidolim.TiNowPlaying');
 
 //Set "Now Playing" info
 PlayingInfo.setInfo({
