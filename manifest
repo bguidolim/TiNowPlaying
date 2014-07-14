@@ -31,7 +31,7 @@ copyright: Copyright (c) 2014 by Your Company
 
 
 # these should not be edited
-name: tinowplayingmodule
+name: TiNowPlaying
 moduleid: com.guidolim.TiNowPlaying
 guid: 0c647c2e-1db3-4fe0-8f3e-dae9a5ebbd1f
 platform: iphone
