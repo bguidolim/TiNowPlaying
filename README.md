@@ -1,10 +1,10 @@
-TiNowPlaying
+TiNowPlaying [![Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://www.appcelerator.com/titanium/)
 ===
 This module allows you to set song attributes and handle remote controls events (Lockscreen or Control Center) on your iOS app using Titanium.
 
 Download
 ===
-Download the compiled release [here](https://github.com/bguidolim/TiPlayingInfo/tree/master/dist).
+Download the compiled release [here](https://github.com/bguidolim/TiPlayingInfo/tree/master/dist) or install from gitTio    [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/com.guidolim.TiNowPlaying)
 
 How to Use
 ===
