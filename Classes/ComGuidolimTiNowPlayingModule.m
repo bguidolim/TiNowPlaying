@@ -44,8 +44,9 @@ MAKE_SYSTEM_PROP(END_SEEK_FORWARD,UIEventSubtypeRemoteControlEndSeekingForward);
     }
     
     if ([obj objectForKey:@"albumCover"] != nil) {
-        NSString *imagePath = [self getPathToApplicationAsset:[obj objectForKey:@"albumCover"]];
-        UIImage *albumImage = [UIImage imageWithContentsOfFile:imagePath];
+        //NSString *imagePath = [self getPathToApplicationAsset:[obj objectForKey:@"albumCover"]];
+        NSURL *imageURL = [NSURL URLWithString:[obj objectForKey:@"albumCover"]];
+        UIImage *albumImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageURL] scale:[UIScreen mainScreen].scale];
         MPMediaItemArtwork *albumCover = [[MPMediaItemArtwork alloc] initWithImage:albumImage];
         
         [nowPlayingInfo setObject:albumCover forKey:MPMediaItemPropertyArtwork];
