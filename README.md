@@ -16,8 +16,9 @@ nowPlaying.setInfo({
   artistName: 'Artist Name',
   songTitle: 'Song Name',
   albumTitle: 'Album Title',
-  albumCover: 'albumCover.png'
+  albumCover: Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'albumCover.png').nativePath()
 });
+//You also set a remote image for album cover.
 
 //Clear "Now Playing" info
 nowPlaying.clear();
