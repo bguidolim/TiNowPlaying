@@ -64,3 +64,8 @@ nowPlaying.addEventListener('RemoteControl', function(e) {
 Contributions
 ===
 Feel free to fork the repo, optimize and make a pull request. :-)
+
+Special Thanks
+===
+ - [Michel Melo](https://github.com/michelmelo)
+ - [Dirlei Dionísio](https://github.com/DirleiDionisio)
