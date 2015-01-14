@@ -69,3 +69,4 @@ Special Thanks
 ===
  - [Michel Melo](https://github.com/michelmelo)
  - [Dirlei Dionísio](https://github.com/DirleiDionisio)
+ - [Nick den Engelsman](https://github.com/nicka)
